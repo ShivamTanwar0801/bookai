@@ -7,7 +7,7 @@ function App() {
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
       </div>
-      <div className="container h-[2000px] flex items-center flex-col p-32">
+      <div className="container h-[2000px] flex items-center flex-col p-8 lg:p-32">
         <h1 className="text-[32px] lg:text-[42px] xl:text-[52px] ">Content</h1>
         <p className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

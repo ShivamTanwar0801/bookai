@@ -31,18 +31,20 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 lg:backdrop-blur-sm border-b border-n-1/40`}
+      className={`fixed top-0 left-0 w-full z-50 lg:backdrop-blur-sm border-b border-n-1/40 ${
+        openNavigation ? "bg-radial-gradient" : "backdrop-blur-sm"
+      }`}
     >
       <div className="container flex items-center px-5 lg:px-[30px] xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8" href="#hero">
           <div className="flex text-[32px] font-code font-semibold">
-            <img src={logo} width={60} alt="BookAI" />
-            <p className="p-2">BookAI</p>
+            <img src={logo} width={40} alt="BookAI"/>
+            <p className="font-bold text-[28px] lg:text-[36px] ml-2">BookAI</p>
           </div>
         </a>
         <nav
           className={`${
-            openNavigation ? "flex" : "hidden"
+            openNavigation ? "flex bg-radial-gradient" : "hidden"
           } fixed top-[5rem] right-0 bottom-0 left-0 lg:static lg:flex lg:mx-auto lg:bg-transparent `}
         >
           <div className="relative z-[2] flex flex-col lg:flex-row items-center justify-center m-auto">
